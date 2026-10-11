@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "records-helper",
+  "version": "1.1.0",
+  "description": "Read and update records",
+  "extensions": { "com.openai": { "interface": { "capabilities": ["Read", "Write"] } } }
+}

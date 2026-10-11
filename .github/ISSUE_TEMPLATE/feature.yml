@@ -1,0 +1,11 @@
+name: Feature request
+description: Propose a narrowly scoped review capability
+body:
+  - type: textarea
+    id: need
+    attributes: { label: User need }
+    validations: { required: true }
+  - type: textarea
+    id: boundary
+    attributes: { label: Security and privacy boundary }
+    validations: { required: true }

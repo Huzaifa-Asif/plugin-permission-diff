@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "plugin-permission-diff",
+  "version": "0.1.0",
+  "description": "Review capability, network, authentication, skill, and privacy-boundary changes between plugin revisions.",
+  "author": {
+    "name": "Huzaifa Asif",
+    "url": "https://github.com/Huzaifa-Asif"
+  },
+  "homepage": "https://github.com/Huzaifa-Asif/plugin-permission-diff",
+  "repository": "https://github.com/Huzaifa-Asif/plugin-permission-diff",
+  "license": "MIT",
+  "keywords": ["plugin-review", "permissions", "privacy", "mcp", "codex"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Plugin Permission Diff",
+        "shortDescription": "Review plugin capability expansion before release",
+        "longDescription": "Compare two local ChatGPT or Codex plugin revisions and produce a redacted, evidence-linked review of expanded capabilities and data boundaries.",
+        "developerName": "Huzaifa Asif",
+        "category": "Developer Tools",
+        "capabilities": ["Read"],
+        "websiteURL": "https://github.com/Huzaifa-Asif/plugin-permission-diff",
+        "privacyPolicyURL": "https://github.com/Huzaifa-Asif/plugin-permission-diff/blob/main/PRIVACY.md",
+        "defaultPrompt": [
+          "Compare these two local plugin folders and explain every permission expansion.",
+          "Create a CI-ready permission diff for this plugin update."
+        ]
+      }
+    }
+  }
+}

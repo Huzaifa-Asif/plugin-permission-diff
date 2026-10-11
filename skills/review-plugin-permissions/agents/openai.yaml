@@ -1,0 +1,4 @@
+interface:
+  display_name: Plugin Permission Diff
+  short_description: Review plugin capability expansion before release
+  default_prompt: Compare these two local plugin revisions and explain permission expansions with evidence.

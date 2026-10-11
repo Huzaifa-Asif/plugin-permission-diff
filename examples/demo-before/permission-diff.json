@@ -1,0 +1,4 @@
+{
+  "tools": { "list_records": { "annotations": { "readOnlyHint": true }, "requiredScopes": ["records.read"] } },
+  "data": { "retentionDays": 0, "logRawPrompts": false }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "plugin-permission-diff",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first permission and data-boundary diffs for ChatGPT and Codex plugin updates.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "bin": { "plugin-permission-diff": "./bin/plugin-permission-diff.js" },
+  "scripts": {
+    "lint": "node --check src/index.js && node --check bin/plugin-permission-diff.js",
+    "typecheck": "node --check src/index.js && node --check bin/plugin-permission-diff.js",
+    "test": "node --test",
+    "build": "node scripts/build.js",
+    "audit": "npm audit --omit=dev",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run audit"
+  },
+  "license": "MIT"
+}
